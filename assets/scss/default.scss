@@ -9,9 +9,10 @@
     &:hover,
     &:active,
     &:focus,
-    &:hover &:focus {
+    &:hover &:focus,
+    &:focus &:active {
         height: 40px;
-        background: $orange;
+        background: $orange!important;
         color: $white;
         border: 0;
         border-radius: 50px;
@@ -273,14 +274,22 @@ ul#answers li label {
         }
     }
     .text-area {
-        padding: 8px;
+        padding: 16px 8px;
         background: white;
         margin: 8px 0;
         border-radius: 16px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
         .form-group {
+            display: flex;
+            justify-content: center;
+            width: 100%;
             margin: 0;
             .form-control {
-                text-align: center;
+                margin: 0px 6px;
+                width: 100px;
+                height: 14px;
                 padding: 0;
                 border: 0;
                 font-weight: 500;

@@ -24,9 +24,5 @@ $(document).ready(function() {
     })
 
     $.ajax(answerSettings).done(function() {})
-
-    document.querySelector('button').
-
-
-
+        // document.querySelector('button').
 });
