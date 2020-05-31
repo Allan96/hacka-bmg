@@ -25,4 +25,6 @@
     }
 }
 
-// @include defineColor('black', $black);
+@include defineColor('black', $black);
+@include defineColor('white', $white);
+@include defineColor('orange', $orange);

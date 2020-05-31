@@ -1,9 +1,11 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
-const browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync');
+const connect = require('gulp-connect-php');
 
 
+// Função para iniciar a compilação do Sass
 function compilaSass() {
     return gulp
         .src('assets/scss/main.scss')
@@ -17,20 +19,21 @@ function compilaSass() {
 
 // Função para iniciar o browser
 function browser() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
+    connect.server({}, function() {
+        browserSync({
+            files: ["assets/js/*.js", "*.php", "*.html"],
+            proxy: 'http://192.168.1.100/2020/hacka-bmg/'
+        });
     });
 }
 
 function watch() {
     gulp.watch('assets/scss/*.scss', compilaSass);
-    gulp.watch(['*.html']).on('change', browserSync.reload);
 }
+
 
 gulp.task('sass', compilaSass);
 gulp.task('browser-sync', browser);
 gulp.task('watch', watch);
 
-gulp.task('default', gulp.parallel('watch', 'browser-sync'));
+gulp.task('default', gulp.parallel('watch', 'sass', 'browser-sync'));

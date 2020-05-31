@@ -1,0 +1,42 @@
+body {
+    max-width: 320px;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: $black;
+}
+
+section {
+    height: 570px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

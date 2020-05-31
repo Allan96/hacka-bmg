@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <section class="bgc-orange" id="conteudo">
+        <div class="container">
+            <div id="menu" class="row">
+                <div class="col-12 d-flex align-items-center">
+                    <a href="./conteudo.html"><img src="./assets/imgs/back.svg" alt=""></a>
+                    <p class="c-orange mb-0">
+                        Quiz
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form method="POST" class="question" action="./resultado.html">
+                        <div class="question_text">
+                            <!-- {{question_text}} -->
+                            <p class="c-white mb-0 mt-4">Atividade 1</p>
+                            <h6 class="c-white mb-5">Qual modalidade de investimento em que os rendimentos, ou seja, a valorização do dinheiro aplicado já são definidos no ato da contratação?</h6>
+                        </div>
+                        <ul id="answers">
+                            <li class="answer d-flex" id="optA">
+                                <input type="radio" name="optA" id="answerA">
+                                <label for=""><!-- {{answer}} --> Poupança</label>
+                            </li>
+                            <li class="answer d-flex" id="optB">
+                                <input type="radio" name="optB" id="answerB">
+                                <label for=""><!-- {{answer}} --> Renda fixa</label>
+                            </li>
+                            <li class="answer d-flex" id="optC">
+                                <input type="radio" name="optC" id="answerC">
+                                <label for=""><!-- {{answer}} --> Renda Variável</label>
+                            </li>
+                            <li class="answer d-flex" id="optD">
+                                <input type="radio" name="optD" id="answerD">
+                                <label for=""><!-- {{answer}} --> Todas as opções acima</label>
+                            </li>
+                        </ul>
+                        <button class="btn btn-secondary c-white bdc-white mt-5" type="submit">
+                            Próximo
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-bar">
+            <img src="./assets/imgs/bottom bar.png" class="c-white" alt="">
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./assets/js/questions.js"></script>
+
+    <script src="https://sbt.0soft.dev/sheet-best-templates.min.js"></script>
+</body>
+
+</html>

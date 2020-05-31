@@ -1,4 +1,240 @@
-@media screen and (min-width: $xs) {}
+.btn-primary {
+    height: 40px;
+    background: $orange;
+    color: $white;
+    border: 0;
+    border-radius: 50px;
+    width: 100%;
+    margin: 8px 0px;
+    &:hover,
+    &:active,
+    &:focus,
+    &:hover &:focus {
+        height: 40px;
+        background: $orange;
+        color: $white;
+        border: 0;
+        border-radius: 50px;
+        width: 100%;
+        margin: 8px 0px;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.btn-secondary {
+    height: 40px;
+    background: transparent;
+    color: $orange;
+    border: 1px solid $orange;
+    border-radius: 50px;
+    width: 100%;
+    margin: 8px 0px;
+    &:hover,
+    &:active,
+    &:focus,
+    &:hover &:focus {
+        height: 40px;
+        background: transparent;
+        color: $orange;
+        border: 1px solid $orange;
+        border-radius: 50px;
+        width: 100%;
+        margin: 8px 0px;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+input.form-control {
+    border: 0;
+    border-bottom: 1px solid $orange;
+    border-radius: 0;
+    color: $orange;
+    font-weight: 500;
+    &:hover,
+    &:active,
+    &:focus,
+    &:hover &:focus {
+        border-bottom: 1px solid $orange;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.question_text {
+    p {
+        margin-top: 10px;
+    }
+    h5 {
+        font-family: Ubuntu;
+        font-size: 14px;
+    }
+}
+
+ul#answers {
+    margin: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#answers li {
+    min-height: 48px;
+    background: $white;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 16px;
+    border: none;
+    margin: 10px 5px;
+    font-size: 12px;
+}
+
+ul#answers li input {
+    margin: auto 5px auto 7px;
+}
+
+ul#answers li label {
+    margin: auto 5px auto 7px;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+@media screen and (min-width: $xs) {
+    #menu {
+        height: 46px;
+        background: #FFFFFF;
+        display: flex;
+        align-items: center;
+        p {
+            font-family: Ubuntu!important;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            margin: 0;
+        }
+        img {
+            margin-right: 8px;
+        }
+    }
+    #bottom-bar {
+        position: fixed;
+        top: 568px;
+        width: 100%;
+    }
+    #score {
+        padding: 16px 0px;
+        margin-bottom: 24px;
+    }
+    #info {
+        padding: 24px 0px;
+        margin-bottom: 24px;
+    }
+    #login {
+        background-image: url(../imgs/login.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end;
+        .box-login {
+            background-color: $white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            margin-top: 16px;
+        }
+    }
+    #onboarding {
+        padding: 32px 0px 24px 0;
+        .box-onboarding {
+            margin-top: 32px;
+            padding: 16px;
+            background-color: $white;
+            border-radius: 16px;
+            height: 456px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 500;
+            margin: 32px 0 16px 0;
+            span {
+                font-size: 16px;
+            }
+        }
+        p {
+            font-size: 12px;
+            line-height: 17px;
+            font-family: 'Noto Serif', serif;
+            color: #545456;
+        }
+        .check {
+            margin: 45px 0;
+        }
+    }
+    #conteudo {
+        p {
+            font-family: Noto Serif;
+            font-size: 12px;
+            line-height: 17px;
+        }
+        .bold {
+            font-family: Ubuntu;
+            font-weight: bold;
+            color: #545456;
+        }
+        .conteudo-img {
+            background-image: url(../imgs/conteudo.jpg);
+            height: 320px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px -15px 32px -15px;
+            display: flex;
+            align-items: flex-end;
+            padding: 24px;
+            h2 {
+                font-family: Ubuntu;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+    #modulos {
+        .modulos-content {
+            img {
+                margin: 8px 0;
+            }
+        }
+    }
+    #dashboard {
+        background: #E8E8E8;
+        .box-info {
+            padding: 24px;
+            background-color: $white;
+            border-radius: 16px;
+            legend {
+                font-family: Ubuntu;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                color: #545456;
+                margin-bottom: 0;
+            }
+            h2 {
+                font-weight: 500;
+                font-size: 32px;
+                color: #FED330;
+                margin-bottom: 24px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
 
 @media screen and (min-width: $sm) {}
 
