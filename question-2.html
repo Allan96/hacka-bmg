@@ -14,7 +14,7 @@
         <div class="container">
             <div id="menu" class="row">
                 <div class="col-12 d-flex align-items-center">
-                    <a href="./conteudo.html"><img src="./assets/imgs/back.svg" alt=""></a>
+                    <a href="./question.html"><img src="./assets/imgs/back.svg" alt=""></a>
                     <p class="c-orange mb-0">
                         Quiz
                     </p>
@@ -22,30 +22,32 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <form method="POST" class="question" action="./question-2.html">
+                    <form method="POST" class="question" action="./resultado.html">
                         <div class="question_text">
                             <!-- {{question_text}} -->
-                            <p class="c-white mb-0 mt-4">Atividade 1</p>
-                            <h6 class="c-white mb-5">Qual modalidade de investimento em que os rendimentos, ou seja, a valorização do dinheiro aplicado já são definidos no ato da contratação?</h6>
+                            <p class="c-white mb-0 mt-4">Atividade 2</p>
+                            <h6 class="c-white mb-5">Complete os exemplos investimentos em renda fixa:</h6>
                         </div>
-                        <ul id="answers">
-                            <li class="answer d-flex" id="optA">
-                                <input type="radio" name="opt" id="answerA" value="optA">
-                                <label for="optA"><!-- {{answer}} --> Poupança</label>
-                            </li>
-                            <li class="answer d-flex" id="optB">
-                                <input type="radio" name="opt" id="answerB" value="optB">
-                                <label for="optB"><!-- {{answer}} --> Renda fixa</label>
-                            </li>
-                            <li class="answer d-flex" id="optC">
-                                <input type="radio" name="opt" id="answerC" value="optC">
-                                <label for="optC"><!-- {{answer}} --> Renda Variável</label>
-                            </li>
-                            <li class="answer d-flex" id="optD">
-                                <input type="radio" name="opt" id="answerD" value="optD">
-                                <label for="optD"><!-- {{answer}} --> Todas as opções acima</label>
-                            </li>
-                        </ul>
+                        <div class="text-area">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" id="q-1" aria-describedby="helpId" placeholder="Títulos _ _ _ _ _ _ _ _ _ (Tesouro Direto)">
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" id="q-2" aria-describedby="helpId" placeholder="Certificados de _ _ _ _ _ _ _ _ _ _ _ _ (CDB)">
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" id="q-3" aria-describedby="helpId" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ Imobiliário (LCI)">
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" id="q-4" aria-describedby="helpId" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ do Agronegócio (LCA)">
+                            </div>
+                        </div>
                         <button class="btn btn-secondary c-white bdc-white mt-5" type="submit">
                             Próximo
                         </button>
