@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     const Api = 'https://sheet.best/api/sheets/8e00432d-526e-4324-95e4-7f67c215cdc6/tabs';
-    const userId = 1
+    const userId = 1;
 
     // Consulta dos pontos do usuário
 
