@@ -18,8 +18,8 @@
         border-radius: 50px;
         width: 100%;
         margin: 8px 0px;
-        box-shadow: none;
-        outline: none;
+        box-shadow: none!important;
+        outline: none!important;
     }
 }
 
@@ -36,14 +36,14 @@
     &:focus,
     &:hover &:focus {
         height: 40px;
-        background: transparent;
+        background: transparent!important;
         color: $orange;
         border: 1px solid $orange;
         border-radius: 50px;
         width: 100%;
         margin: 8px 0px;
-        box-shadow: none;
-        outline: none;
+        box-shadow: none!important;
+        outline: none!important;
     }
 }
 
